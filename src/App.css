@@ -1,0 +1,61 @@
+:root {
+    --primary: #ef1442;
+    --hover: #ef1442;
+    --secondary: #000;
+    --bg-color: #fbf9f4;
+    --disabled-button: #f15778;
+    --btn-primary:#FFBF00;
+  }
+  .text-primary{
+    color: var(--primary);
+  }
+  .btn-box {
+    background-color: var( --secondary);
+    box-shadow: none;
+    border-radius: 10px;
+    padding: 6px;
+  }
+  .btn-primary {
+    color: #fff;
+    background-color: var(--btn-primary);
+    border: 2px solid var(--btn-primary);
+    box-shadow: none;
+    border-radius: 10px;
+    padding: 6px;
+  }
+  .btn-primary:hover {
+    
+    color: var(--btn-primary);
+    background-color: #fff;
+  }
+  .btn-secondary {
+    color: var(--primary);
+    background-color: #fff;
+    border: 2px solid var(--primary);
+    box-shadow: none;
+    border-radius: 10px;
+    padding: 6px;
+  }
+  .btn-secondary:focus {
+    color: var(--primary);
+    background-color: #fff;
+    border: 2px solid var(--primary);
+    box-shadow: none;
+    border-radius: 10px;
+    padding: 6px;
+  }
+  .btn-secondary:hover {
+    color: #fff;
+    background-color: var(--primary);
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    width: 0.5em;
+  }
+  
+  .hide-scrollbar::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+  .hide-scrollbar::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
