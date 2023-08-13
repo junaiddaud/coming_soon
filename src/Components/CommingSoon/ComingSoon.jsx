@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import dayjs from "dayjs";
+import drone from '../../assets/drone.jpg'
 
 
 // const launchTimestamp = 1692489600000; // 20 Aug 2023
@@ -48,8 +49,23 @@ const ComingSoon = () => {
       changeCircleoffset(seconds, minutes, hours, days);
     
     return (
-        <div className="flex min-h-screen h-max md:h-screen flex-col md:flex-row justify-center items-center bg-gradient-to-l sm:bg-gradient-to-t from-[#88adf1] to-[#374b9c]">
+
+        <div className="relative   min-h-screen h-max md:h-screen flex-col  justify-center items-center  bg-cover "
+       
+        >
+            <img src={drone} alt="Background Image" className="w-full h-full object-cover blur-sm"></img>
+            <div className="absolute top-24 w-full  "
+       
+       >
+          <div className=" text-white text-center flex  flex-col justify-center items-center ">
+             <h1  className="text-6xl font-bold my-2">The Captain Taxxi</h1>
+          <p className="text-3xl font-bold">Comming Soon</p>
+          </div>
+               <div className="flex  flex-col md:flex-row  justify-center items-center  bg-cover"
+   
+        >
         <div className="relative">
+     
           <svg className="-rotate-90 h-48 w-48">
             <circle
               r="70"
@@ -153,6 +169,8 @@ const ComingSoon = () => {
             </span>
           </div>
         </div>
+        </div>
+      </div>
       </div>
       );
 }
